@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Monte Carlo CLI sample output</title>
+  <desc id="desc">Screenshot style view of Monte Carlo option pricing CLI results.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="760" fill="#0b1020" />
+  <rect x="24" y="24" width="1152" height="712" rx="14" fill="url(#bg)" stroke="#334155" stroke-width="2" />
+
+  <circle cx="56" cy="54" r="7" fill="#ef4444" />
+  <circle cx="78" cy="54" r="7" fill="#f59e0b" />
+  <circle cx="100" cy="54" r="7" fill="#22c55e" />
+
+  <text x="126" y="60" fill="#93c5fd" font-size="18" font-family="Consolas, Menlo, Monaco, monospace">
+    dotnet run --project src/MonteCarlo -- --simulations 20000 --steps 126
+  </text>
+
+  <g fill="#e5e7eb" font-size="22" font-family="Consolas, Menlo, Monaco, monospace">
+    <text x="56" y="108">Monte Carlo European Option Pricing</text>
+    <text x="56" y="136">==================================</text>
+
+    <text x="56" y="178">simulations: 20000</text>
+    <text x="56" y="210">steps:       126</text>
+    <text x="56" y="242">spot:        100.0000</text>
+    <text x="56" y="274">strike:      100.0000</text>
+    <text x="56" y="306">rate:        0.0500</text>
+    <text x="56" y="338">volatility:  0.2000</text>
+    <text x="56" y="370">maturity:    1.0000</text>
+    <text x="56" y="402">seed:        42</text>
+
+    <text x="56" y="454">call_price:  10.284932</text>
+    <text x="56" y="486">call_ci_95:  [10.082159, 10.487705]</text>
+    <text x="56" y="518">put_price:   5.681039</text>
+    <text x="56" y="550">put_ci_95:   [5.560272, 5.801806]</text>
+    <text x="56" y="582">prob_itm:    0.551550</text>
+    <text x="56" y="614">E[S_T]:      104.839939</text>
+    <text x="56" y="646">E_theory:    105.127110</text>
+
+    <text x="56" y="702">put_call_parity_gap: 0.273165</text>
+  </g>
+</svg>

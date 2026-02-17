@@ -2,6 +2,16 @@
 
 A fresh .NET implementation of Monte Carlo simulation for European option pricing.
 
+## Sample Result
+
+![Sample CLI output](assets/sample-output.svg)
+
+Generated with:
+
+```bash
+dotnet run --project src/MonteCarlo -- --simulations 20000 --steps 126
+```
+
 ## What it does
 
 - Simulates geometric Brownian motion price paths
